@@ -739,6 +739,13 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.container-feature {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -751,6 +758,12 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-feature {
     width: 1170px;
   }
 }
@@ -5421,6 +5434,7 @@ button.close {
 }
 .carousel-inner > .item {
   position: relative;
+  margin-top: 50px;
   display: none;
   -webkit-transition: .6s ease-in-out left;
           transition: .6s ease-in-out left;
@@ -5461,8 +5475,8 @@ button.close {
 }
 .carousel-control {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 50px;
+  bottom: -50px;
   left: 0;
   width: 15%;
   font-size: 20px;
